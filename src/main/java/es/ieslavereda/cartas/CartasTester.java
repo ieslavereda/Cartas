@@ -6,3 +6,5 @@ public class CartasTester {
         System.out.println(baraja.toString());
     }
 }
+
+// https://github.com/ieslavereda/Cartas

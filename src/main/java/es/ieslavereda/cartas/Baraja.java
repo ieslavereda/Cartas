@@ -1,13 +1,13 @@
 package es.ieslavereda.cartas;
 
 public class Baraja {
-    private String[] palos = {"o", "b", "e", "c"};
+    Palo palos;
     private Carta[] cartas;
 
     public Baraja() {
         cartas = new Carta[48];
         int j=0;
-        for(String palo : palos) {
+        for(Palo palo : Palo.values()){
             for (int i = 1; i <= 12; i++) {
                 cartas[j++] = new Carta(palo,i);
             }
