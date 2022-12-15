@@ -8,8 +8,8 @@ public class Baraja {
         cartas = new Carta[48];
         int j=0;
         for(Palo palo : Palo.values()){
-            for (int i = 1; i <= 12; i++) {
-                cartas[j++] = new Carta(palo,i);
+            for (Valor valor : Valor.values()) {
+                cartas[j++] = new Carta(palo,valor);
             }
         }
     }
