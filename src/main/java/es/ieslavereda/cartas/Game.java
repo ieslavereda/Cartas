@@ -59,7 +59,34 @@ public class Game {
     }
 
     public void juegaPC(){
+        System.out.println("--------------------------------------------");
+        System.out.println("It's time for player " + pc.getNombre());
+        pc.addCarta(baraja.getLastCard());
+        System.out.println(pc);
+        int max = maxPuntuacion();
 
+        while(pc.getPuntuacion()>=0 && max>pc.getPuntuacion()) {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e){
+                throw new RuntimeException(e);
+            }
+
+            pc.addCarta(baraja.getLastCard());
+            System.out.println(pc);
+            if (pc.getPuntuacion()==-1)
+                System.out.println("PC se ha pasado !!");
+        }
+    }
+
+    private int maxPuntuacion() {
+        int maxPuntuacion = -2;
+        for (Jugador player:jugadores) {
+            if(player.getPuntuacion()>maxPuntuacion) {
+                maxPuntuacion = player.getPuntuacion();
+            }
+        }
+        return maxPuntuacion;
     }
 
 }
