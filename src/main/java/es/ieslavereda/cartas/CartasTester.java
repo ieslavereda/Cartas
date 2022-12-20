@@ -7,7 +7,7 @@ public class CartasTester {
         Jugador[] jugadores = new Jugador[numJugadores];
 
         for (int i = 0; i < jugadores.length; i++) {
-            jugadores[i] = new Jugador(Input.getString("Name for player #" + i+1 + ": "));
+            jugadores[i] = new Jugador(Input.getString("Name for player #" + (i+1) + ": "));
         }
 
         Game jugada = new Game(jugadores);
