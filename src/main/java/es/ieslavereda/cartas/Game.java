@@ -1,5 +1,7 @@
 package es.ieslavereda.cartas;
 
+import es.ieslavereda.utils.Input;
+
 public class Game {
 
     private Baraja baraja;
@@ -19,6 +21,45 @@ public class Game {
         }
         juegaPC();
         mostrarGanador();
+    }
+
+    public void mostrarGanador(){
+        int maxPuntuacion = -2;
+        String nombreGanador = "";
+
+        for (Jugador player:jugadores) {
+            if(player.getPuntuacion()>maxPuntuacion) {
+                maxPuntuacion = player.getPuntuacion();
+                nombreGanador = player.getNombre();
+            }
+        }
+
+        if(maxPuntuacion<=pc.getPuntuacion())
+            nombreGanador = pc.getNombre();
+
+        System.out.println("And the winner is... " + nombreGanador);
+
+    }
+
+    public void juegaJugador(Jugador player){
+        System.out.println("--------------------------------------------");
+        System.out.println("It's time for player " + player.getNombre());
+        player.addCarta(baraja.getLastCard());
+        System.out.println(player);
+        String option = Input.getOption("Would you like a new card? ");
+
+        while(option.equals("Y")&&player.getPuntuacion()>=0) {
+            player.addCarta(baraja.getLastCard());
+            System.out.println(player);
+            if (player.getPuntuacion()==-1)
+                System.out.println("Te has pasado !!");
+            else
+                option = Input.getOption("Would you like a new card? ");
+        }
+    }
+
+    public void juegaPC(){
+
     }
 
 }
