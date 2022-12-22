@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class Baraja {
-    Palo palos;
+    private Palo palos;
     private Carta[] cartas;
 
     public Baraja() {
