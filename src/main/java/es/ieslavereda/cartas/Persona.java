@@ -22,6 +22,18 @@ public class Persona {
         this.estadoCivil = EstadoCivil.SOLTERO;
     }
 
+    public int total(int ... numeros) {
+        int sum = 0;
+        for (int i = 0; i < numeros.length; i++) {
+            sum = numeros[i];
+        }
+        return sum;
+    }
+
+    public String total(String ... numeros) {
+        return "0";
+    }
+
     //GETTERS
     public EstadoCivil getEstadoCivil() { return estadoCivil;}
     public String getNombre() { return nombre;}

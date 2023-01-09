@@ -34,6 +34,9 @@ public class ProbarDias {
         Persona vicent = new Persona(EstadoCivil.CASADO,25,name);
         System.out.println(vicent.getEstadoCivil());
 
+        vicent.total(1,2,3,4);
+        vicent.total(2);
+
         double nomina = 40000.00;
         double porcentaje = (double) vicent.getEstadoCivil().getRetencion()/100;
         double nominaNeto = nomina*(1-porcentaje);

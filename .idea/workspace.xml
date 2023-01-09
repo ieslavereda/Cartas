@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c407df04-58fd-4d49-93df-cc2e0ef0ee1c" name="Changes" comment="0.3">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/cartas/Day.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/cartas/EstadoCivil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/cartas/Persona.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/cartas/ProbarDias.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/cartas/Profesor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/cartas/Baraja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/cartas/Baraja.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/cartas/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/cartas/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/cartas/ProbarDias.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/cartas/ProbarDias.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -164,16 +161,5 @@
     <MESSAGE value="0.2" />
     <MESSAGE value="0.3" />
     <option name="LAST_COMMIT_MESSAGE" value="0.3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/es/ieslavereda/cartas/ProbarDias.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
